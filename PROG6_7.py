@@ -8,7 +8,6 @@ def standaardtarief(afstandKM):
         standaardprijs = afstandKM * 0.8
     return standaardprijs
 
-
 def ritprijs(leeftijd, weekendrit, afstandKM):
     weekendrit = weekendrit.lower()
     standaardprijs = standaardtarief(afstandKM)
@@ -22,11 +21,11 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
         prijs = standaardprijs
     return prijs
 
-#afstandKM = int(input("Hoeveel kilometer heeft u gereist?:"))
-#weekendrit = str(input("Is het weekend?:"))
-#leeftijd = int(input("Wat is uw leeftijd?:"))
+afstandKM = int(input("Hoeveel kilometer heeft u gereist?:"))
+weekendrit = str(input("Is het weekend?:"))
+leeftijd = int(input("Wat is uw leeftijd?:"))
 
-#print(ritprijs(leeftijd, weekendrit, afstandKM))
+print(ritprijs(leeftijd, weekendrit, afstandKM))
 
 #Testing the ritprijs() function with different variables
 print(ritprijs(11, "ja", 49))
